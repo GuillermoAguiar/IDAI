@@ -16,13 +16,37 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 15px;
         }
-        table th{
-            background-color: lightskyblue;
-        }
+        table th,
         table td:first-child{
+            background-color: lightskyblue;
+            color: white;
+            font-weight: 600px;
+            width: 100px;
+        }
+        table td,
+        table th{
+            border: 1px solid #dee2e6;
+            padding: 5px 10px;
+        }
+        table td span:nth-child(1){
+            color: #17a2b8;
+        }
+        table td span:nth-child(2){
+            color: #28a745;
+        }
+        table td span:nth-child(3){
+            color: #dc3545;
+        }
+        table tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        table tr:hover{
+            background-color: lightskyblue;
             
         }
-
+        table td span:hover{
+            opacity: 0.3;
+        }
 
 
     </style>
