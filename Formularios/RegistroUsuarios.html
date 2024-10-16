@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de usuarios</title>
-    
 
+    <style>
+
+        form{
+            text-align: center;
+        }
+    </style>
 
 </head>
 <body>
+
+    <h1 align="right">
+        <button>
+            <a href="../index.html">Regresar al inicio</a>
+        </button>
+    </h1>
+    <br>
 
     <form action="../index.html">
         <label for="nombre">Nombre(s):</label>
@@ -29,8 +41,81 @@
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
         <br>
+        <label for="number">Número</label>
+        <input type="number" name="number" id="number">
+        <br>
+        <label for="range">Rango</label>
+        <input type="range" name="range" id="range">
+        <br>
+        <br>
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url">
+        <br>
+        <br>
+        <label for="campotexto">Campo de texto</label>
+        <textarea name="campotexto" id="campotexto"></textarea>
+        <br>
+        <br>
+        <label for="date">Fecha</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <br>
+        <label for="time">Hora</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <br>
+        <label for="datetime">Fecha y hora</label>
+        <input type="datetime-local" name="datetime" id="datetime">
+        <br>
+        <br>
+        <label for="week">Semana</label>
+        <input type="week" name="week" id="week">
+        <br>
+        <br>
+        <label for="month">Mes</label>
+        <input type="month" name="month" id="month">
+        <br>
+        <br>
+        <label for="radio">Radio button</label>
+        <input type="radio" name="radio" id="radio">
+        <br>
+        <br>
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <br>
+        <br>
+        <label for="color">Colores</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="select">Select - Option</label>
+        <select name="select" id="select">
+            <option value="1">Option1</option>
+            <option value="2">Option2</option>
+            <option value="3">Option3</option>
+        </select>
+        <br>
+        <br>
+        <select multiple>
+            <option value="1">Elemnto 1</option>
+            <option value="2">Elemento 2</option>
+            <option value="3">Elemento 3</option>
+        </select>
+        <br>
+        <br>
+        <label for="datalist">Datalist</label>
+        <input type="text" list="items">
+        <datalist id="items">
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+        </datalist>
+        <br>
+        <br>
+        <br>
 
         <button type="submit">Enviar datos</button>
+
+       
 
     </form>
     
