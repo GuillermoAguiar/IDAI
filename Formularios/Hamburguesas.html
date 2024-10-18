@@ -26,132 +26,140 @@
 </head>
 <body>
 
-    <table style="width: 25%; height: 75%;" align="center">
+    <form action="RegistroUsuarios.html">
 
-        <thead>
+        <table style="width: 25%; height: 75%;" align="center">
 
-            <tr>
-                <th>
-                    <h1>Tasty Burgers</h1>
-                    <hr>
-                    <h2>Dirección: Niños Héroes 110, Zapata, 64390 Monterrey, N.L.
+            <thead>
+
+                <tr>
+                    <th>
+                        <h1>Tasty Burgers</h1>
+                        <hr>
+                        <h2>Dirección: Niños Héroes 110, Zapata, 64390 Monterrey, N.L.
+                            <br>
+                            Teléfono: 81 3193 0129
+                            <br>
+                            <a href="https://www.facebook.com/profile.php?id=100069775099075">Facebook</a>
+                        </h2>
+                        <marquee behavior="" direction="">Las mejores hanburguesas de Nuevo León</marquee>
+                    </th>
+
+                    <th>
+                        <img src="../Imagenes/LogoHamburguesas.png" alt="LogoHamburguesas" width="90%">
+                    </th>
+                </tr>
+
+            </thead>
+
+        </table>
+
+        <table align="center">
+
+            <thead>
+
+                <tr>
+                    <th colspan="2">Seleccionar producto</th>
+                    <th colspan="2">Detalles de mi hamburguesa</th>
+                    <th>Cantidad y orden</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <input type="radio" name="tipoHamburguesa" id="radioHambSencilla" value="hambSencilla">
+                        <label for="radioHambSencilla">Hamburguesa sencilla 35.00 MXN</label>
                         <br>
-                        Teléfono: 81 3193 0129
+                        <input type="radio" name="tipoHamburguesa" id="radioHambEspecial" value="hambEspecial">
+                        <label for="radioHambEspecial">Hamburguesa especial 45.00 MXN</label>
                         <br>
-                        <a href="https://www.facebook.com/profile.php?id=100069775099075">Facebook</a>
-                    </h2>
-                    <marquee behavior="" direction="">Las mejores hanburguesas de Nuevo León</marquee>
-                </th>
+                        <input type="radio" name="tipoHamburguesa" id="radioHambDoble" value="hambDoble">
+                        <label for="radioHambDoble">Hamgurguesa doble 60.00 MXN</label>
+                        <br>
+                        <input type="radio" name="tipoHamburguesa" id="radioHambSuprema" value="hambSuprema">
+                        <label for="radioHambSuprema">Hamburguesa suprema 90.00 MXN</label>
+                        
+                    </td>
 
-                <th>
-                    <img src="../Imagenes/LogoHamburguesas.png" alt="LogoHamburguesas" width="90%">
-                </th>
-            </tr>
+                    <td>
+                        <input type="radio" name="tipodeCarne" id="radioTradEspecial" value="TradEspecial">
+                        <label for="radioTradEspecial">Tradicional especial</label>
+                        <br>
+                        <input type="radio" name="tipodeCarne" id="radioAngus" value="Angus">
+                        <label for="radioAngus">Angus</label>
+                        <br>
+                        <input type="radio" name="tipodeCarne" id="radioPollo" value="Pollo">
+                        <label for="radioPollo">Pollo</label>
+                        <br>
+                        <input type="radio" name="tipodeCarne" id="radioRoastBeef" value="roastBeef">
+                        <label for="radioRoastBeef">Roast beef</label>
+                    </td>
 
-        </thead>
+                    <td>
+                        <input type="checkbox" name="IngredienteCebolla" id="checkboxCebolla" value="Cebolla">
+                        <label for="checkboxCebolla">Cebolla</label>
+                        <br>
+                        <input type="checkbox" name="IngredienteTomate" id="checkboxTomate" value="Tomate">
+                        <label for="checkboxTomate">Tomate</label>
+                        <br>
+                        <input type="checkbox" name="IngredienteQuesoAmarillo" id="checkboxQuesoAmarillo" value="QuesoAmarillo">
+                        <label for="checkboxQuesoAmarillo">Queso amarillo</label>
+                        <br>
+                        <input type="checkbox" name="IngredienteJamon" id="checkboxJamon" value="Jamon">
+                        <label for="checkboxJamon">Jamón</label>
+                        <br>
+                        <input type="checkbox" name="IngredienteAguacate" id="checkboxAguacate" value="Aguacate">
+                        <label for="checkboxAguacate">Aguacate</label>
+                    </td>
 
-    </table>
+                    <td>
+                        <input type="checkbox" name="IngredienteCebollaMorada" id="checkboxCebollaMorada" value="CebollaMorada">
+                        <label for="checkboxCebollaMorada">Cebolla morada</label>
+                        <br>
+                        <input type="checkbox" name="IngredienteQuesoGouda" id="checkboxQuesoGouda" value="QuesoGouda">
+                        <label for="checkboxQuesoGouda">Queso gouda</label>
+                        <br>
+                        <input type="checkbox" name="IngredientePiña" id="checkboxPiña" value="Piña">
+                        <label for="checkboxPiña">Piña</label>
+                        <br>
+                        <input type="checkbox" name="IngredienteChampiñones" id="checkboxChampiñones" value="Champiñones">
+                        <label for="checkboxChampiñones">Champiñones</label>
+                        <br>
+                        <input type="checkbox" name="IngredientePeperoni" id="checkboxPeperoni" value="Peperoni">
+                        <label for="checkboxPeperoni">Peperoni</label>
+                    </td>
 
-    <table align="center">
+                    <td style="text-align: center;">
+                        <label for="canthamb">Cantidad:</label>
+                        <input type="number" name="numhamb" id="canthamb">
+                        <br>
+                        <br>
+                        <label for="inpcliente">Cliente:</label>
+                        <input type="text" name="cliente" id="inpcliente">
+                        <br>
+                        <br>
+                        <label for="domiciloAqui">Entregar en:</label>
+                        <select name="domAqui" id="domiciloAqui">
+                            <option value="1">A domicilo</option>
+                            <option value="2">Para comer aquí</option>
+                            <option value="3">Para recoger</option>
+                        </select>
+                    </td>
+                </tr>
 
-        <thead>
+            </tbody>
 
-            <tr>
-                <th colspan="2">Seleccionar producto</th>
-                <th colspan="2">Detalles de mi hamburguesa</th>
-                <th>Cantidad y orden</th>
-            </tr>
+            <tfoot></tfoot>
 
-        </thead>
+        </table>
 
-        <tbody>
+        <input type="submit" value="Enviar Datos">
+        <button type="submit">Guardar</button>
 
-            <tr>
-                <td>
-                    <input type="radio" name="tipoHamburguesa" id="radioHambSencilla" value="hambSencilla">
-                    <label for="radioHambSencilla">Hamburguesa sencilla 35.00 MXN</label>
-                    <br>
-                    <input type="radio" name="tipoHamburguesa" id="radioHambEspecial" value="hambEspecial">
-                    <label for="radioHambEspecial">Hamburguesa especial 45.00 MXN</label>
-                    <br>
-                    <input type="radio" name="tipoHamburguesa" id="radioHambDoble" value="hambDoble">
-                    <label for="radioHambDoble">Hamgurguesa doble 60.00 MXN</label>
-                    <br>
-                    <input type="radio" name="tipoHamburguesa" id="radioHambSuprema" value="hambSuprema">
-                    <label for="radioHambSuprema">Hamburguesa suprema 90.00 MXN</label>
-                    
-                </td>
-
-                <td>
-                    <input type="radio" name="tipodeCarne" id="radioTradEspecial" value="TradEspecial">
-                    <label for="radioTradEspecial">Tradicional especial</label>
-                    <br>
-                    <input type="radio" name="tipodeCarne" id="radioAngus" value="Angus">
-                    <label for="radioAngus">Angus</label>
-                    <br>
-                    <input type="radio" name="tipodeCarne" id="radioPollo" value="Pollo">
-                    <label for="radioPollo">Pollo</label>
-                    <br>
-                    <input type="radio" name="tipodeCarne" id="radioRoastBeef" value="roastBeef">
-                    <label for="radioRoastBeef">Roast beef</label>
-                </td>
-
-                <td>
-                    <input type="checkbox" name="IngredienteCebolla" id="checkboxCebolla" value="Cebolla">
-                    <label for="checkboxCebolla">Cebolla</label>
-                    <br>
-                    <input type="checkbox" name="IngredienteTomate" id="checkboxTomate" value="Tomate">
-                    <label for="checkboxTomate">Tomate</label>
-                    <br>
-                    <input type="checkbox" name="IngredienteQuesoAmarillo" id="checkboxQuesoAmarillo" value="QuesoAmarillo">
-                    <label for="checkboxQuesoAmarillo">Queso amarillo</label>
-                    <br>
-                    <input type="checkbox" name="IngredienteJamon" id="checkboxJamon" value="Jamon">
-                    <label for="checkboxJamon">Jamón</label>
-                    <br>
-                    <input type="checkbox" name="IngredienteAguacate" id="checkboxAguacate" value="Aguacate">
-                    <label for="checkboxAguacate">Aguacate</label>
-                </td>
-
-                <td>
-                    <input type="checkbox" name="IngredienteCebollaMorada" id="checkboxCebollaMorada" value="CebollaMorada">
-                    <label for="checkboxCebollaMorada">Cebolla morada</label>
-                    <br>
-                    <input type="checkbox" name="IngredienteQuesoGouda" id="checkboxQuesoGouda" value="QuesoGouda">
-                    <label for="checkboxQuesoGouda">Queso gouda</label>
-                    <br>
-                    <input type="checkbox" name="IngredientePiña" id="checkboxPiña" value="Piña">
-                    <label for="checkboxPiña">Piña</label>
-                    <br>
-                    <input type="checkbox" name="IngredienteChampiñones" id="checkboxChampiñones" value="Champiñones">
-                    <label for="checkboxChampiñones">Champiñones</label>
-                    <br>
-                    <input type="checkbox" name="IngredientePeperoni" id="checkboxPeperoni" value="Peperoni">
-                    <label for="checkboxPeperoni">Peperoni</label>
-                </td>
-
-                <td style="text-align: center;">
-                    <label for="canthamb">Cantidad de hamburguesas</label>
-                    <input type="text" name="numhamb" id="canthamb">
-                    <br>
-                    <br>
-                    <label for="domiciloAqui">A domicilo o para comer aquí</label>
-                    <select name="domAqui" id="domiciloAqui">
-                        <option value="1">A domicilo</option>
-                        <option value="2">Para comer aquí</option>
-                    </select>
-                </td>
-            </tr>
-
-        </tbody>
-
-        <tfoot>
-
-            
-
-        </tfoot>
-
-    </table>
+    </form>
 
 </body>
 </html>
