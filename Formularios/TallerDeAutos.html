@@ -5,20 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller automatriz</title>
 
+
+    <style>
+
+        #Taller{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: azure;
+        }
+        #Taller thead tr th{
+            text-align: left;
+        }
+        #Taller thead th{
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        tbody td:nth-child(3){
+            padding-left: 5px;
+        }
+        td{
+          vertical-align: top;  
+        }
+        h4{
+            text-align: left;
+            padding-left: 5px;
+        }
+        #logo thead th{
+            text-align: center;
+        }
+
+
+
+
+    </style>
+
+
+
+
 </head>
 <body>
 
-    <form action="">
+    <table id="logo" style="width: 60%;">
 
-        <table>
+        <thead>
+
+            <tr>
+
+                <th>
+                    <img src="../Imagenes/Taller mecánico.png" alt="TallerMecanico" width="20%">                
+                </th>
+
+            </tr>
+
+        </thead>
+
+    </table>
+
+    <form action="RegistroUsuarios.html">
+
+        <table style="width: 60%;" rules="cols" id="Taller">
 
             <thead>
 
                 <tr>
 
-                    <td>
-
-                    </td>
+                    <th style="width: 40%;">Servicios</th>
+                    <th style="width: 30%;">Tipos de motor</th>
+                    <th style="width: 30%;">Agenda tu cita</th>
 
                 </tr>
 
@@ -26,13 +79,112 @@
 
             <tbody>
 
-                
+                <tr>
+
+                    <td>
+                        <input type="checkbox" name="TipoAceiteFiltro" id="CambioAceiteFiltro">
+                        <label for="CambioAceiteFiltro">Cambio de Aceite y Filtro.</label>
+                        <br>
+                        <input type="checkbox" name="TipoAfiGeneral" id="AfiGeneral">
+                        <label for="AfiGeneral">Afinación General.</label>
+                        <br>
+                        <input type="checkbox" name="TipoMantAire" id="MantAireAcon">
+                        <label for="MantAireAcon">Mantenimiento al Aire Acondicionado.</label>
+                        <br>
+                        <input type="checkbox" name="ServiDeFrenos" id="ServicioFrenos">
+                        <label for="ServicioFrenos">Servicio de Frenos.</label>
+                        <br>
+                        <input type="checkbox" name="SustiFiltAceite" id="FiltroAceite">
+                        <label for="FiltroAceite">Sustitución al Filtro de Aceite.</label>
+                        <br>
+                        <input type="checkbox" name="AliBalance" id="AlineacionBalance">
+                        <label for="AlineacionBalance">Alineación y Balance.</label>
+                        <br>
+                        <input type="checkbox" name="SistEnfri" id="SistemaEnfri">
+                        <label for="SistemaEnfri">Sistema de Enfriamiento.</label>
+                        <br>
+                        <input type="checkbox" name="Amorti" id="Amortiguadores">
+                        <label for="Amortiguadores">Amortiguadores</label>
+                        <br>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="TipoCilindro" id="4cilindros">
+                        <label for="4cilindros">4 cilindros</label>
+                        <br>
+                        <input type="radio" name="TipoCilindro" id="6cilindros">
+                        <label for="6cilindros">6 cilindros</label>
+                        <br>
+                        <input type="radio" name="TipoCilindro" id="8cilindros">
+                        <label for="8cilindros">8 cilindros</label>
+                        <br>
+
+                        <h4>Tipo de auto</h4>
+                        <input type="radio" name="TipoDeAuto" id="Sedan">
+                        <label for="Sedan">Sedan</label>
+                        <br>
+                        <input type="radio" name="TipoDeAuto" id="Lujo">
+                        <label for="Lujo">Lujo</label>
+                        <br><input type="radio" name="TipoDeAuto" id="Deportivo">
+                        <label for="Deportivo">Deportivo</label>
+                        <br>
+                        <input type="radio" name="TipoDeAuto" id="Familiar">
+                        <label for="Familiar">Familiar</label>
+                        <br>
+                        <input type="radio" name="TipoDeAuto" id="Camioneta">
+                        <label for="Camioneta">Camioneta</label>
+                        <br>
+                    </td>
+
+                    <td>
+                        <label for="">Marca</label>
+                        <input type="text" name="" id="">  
+                        <br>
+                        <label for="">Modelo</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <label for="">Año</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <label for="">Kilometraje</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <br>
+                        <label for="">¿Desea factura?(si/no)</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <br>
+
+                        <label for="TipoDePago">Tipo de pago</label>
+                        <select name="Pago" id="TipoDePago">
+                            <option value="1">Efectivo</option>
+                            <option value="2">Tarjeta de Crédito o Débito</option>
+                            <option value="3">Transferencia Electrónica</option>
+                            <option value="4">Crédito a 3 meses</option>
+                        </select>
+                    </td>
+
+                </tr>
 
             </tbody>
 
         </table>
+        <br>
+        <br>
+
+        <button type="submit" onclick="alert('GRACIAS POR CONFIAR EN NOSOTROS.... SU COCHE ESTA EN BUENAS MANOS')">Enviar</button>
 
     </form>
     
 </body>
+
+    <br>
+    <br>
+    <br>
+
+<footer>
+
+    <h2>Desarrollado por: Guillermo Aguiar Guerra</h2>
+
+</footer>
 </html>
