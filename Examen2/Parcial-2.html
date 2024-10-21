@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-color: khaki;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <form action="../Formularios/RegistroUsuarios.html">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>RECIBO TELEFÓNICO</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <label for="MinCel">Minutos del celular (1.00 c/u)</label>
+                        <br>
+                        <input type="text" name="MinutosCel" id="MinCel">
+                        <br>
+                        <h4>TIPO DE PLAN</h4>
+                        <input type="radio" name="TipoPlan" id="SoloTel">
+                        <label for="SoloTel">Solo teléfono</label>
+                        <br>
+                        <input type="radio" name="TipoPlan" id="TelInt">
+                        <label for="TelInt">Teléfono + Internet</label>
+                        <br>
+                        <input type="radio" name="TipoPlan" id="TelIntTV">
+                        <label for="TelIntTV">Teléfono + Internet + TV</label>
+                        <br>
+                        <h4>OTROS SERVICIOS</h4>
+                        <input type="checkbox" name="Antivirus" id="AntVirus">
+                        <label for="AntVirus">Antivirus</label>
+                        <br>
+                        <input type="checkbox" name="ServicioDeNube" id="ServNube">
+                        <label for="ServNube">Servicio de Nube</label>
+                        <br>
+                        <input type="checkbox" name="WebServices" id="WebServ">
+                        <label for="WebServ">Web Services</label>
+                        <br>
+                        <br>
+                        <label for="TipoPaquetes">Paquetes</label>
+                        <br>
+                        <select name="Paquetes" id="TipoPaquetes">
+                            <option value="1">Residencial</option>
+                            <option value="2">Pymes</option>
+                            <option value="3">Empresas</option>
+                        </select>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+        <br>
+        <br>
+
+        <button type="submit" onclick="alert('GRACIAS POR TU PAGO')">CALCULAR</button>
+
+       
+    </form>
+
+    
+
+    
+</body>
+</html>
