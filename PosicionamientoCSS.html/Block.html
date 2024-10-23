@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicionamiento CSS</title>
+
+    <style>
+
+        article{
+            border: 1px solid red;
+            margin-bottom: 100px;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid blue;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .bloque div{
+            display: block;
+        }
+
+        .linea div{
+            display: inline-block;
+        }
+
+        .tablecell div{
+            display: table-cell;
+        }
+
+        #relativo{
+            position: relative;
+            left: 300px;
+        }
+
+        #absoluto{
+            position: absolute;
+            right: 50px;
+        }
+
+        #fijo{
+            position: fixed;
+            background-color: yellow;
+            right: 50px;
+            top: 100px;
+        }
+
+        .flotante{
+            height: 400px;
+            width: 100%;
+        }
+
+        .flotante div{
+            float: left;
+        }
+
+        .flotante div:nth-child(2){
+            float: right;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <button>
+        <a href="../index.html">Regresar al inicio</a>
+    </button>
+
+    <h1>Elementos en bloque</h1>
+    <article class="bloque">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>Elementos en linea</h1>
+    <article class="linea">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>Elementos en tabla</h1>
+    <article class="tablecell">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+    </article>
+
+    <h1>Posición</h1>
+    <article>
+        <div id="relativo">Relativo</div>
+        <div id="absoluto">Absoluto</div>
+        <div id="fijo">Fijo</div>
+    </article>
+
+    <h1>Posicionamiento flotante</h1>
+    <article class="flotante">
+        <div>Primero</div>
+        <div>Segundo</div>
+        <div>Tercero</div>
+    </article>
+
+    
+</body>
+</html>
