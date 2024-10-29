@@ -69,7 +69,7 @@
             <tbody>
 
                 <tr>
-                    <td>
+                    <td class="opcionesDeHamburguesas">
                         <input type="radio" name="tipoHamburguesa" id="radioHambSencilla" value="hambSencilla">
                         <label for="radioHambSencilla">Hamburguesa sencilla 35.00 MXN</label>
                         <br>
@@ -81,6 +81,7 @@
                         <br>
                         <input type="radio" name="tipoHamburguesa" id="radioHambSuprema" value="hambSuprema">
                         <label for="radioHambSuprema">Hamburguesa suprema 90.00 MXN</label>
+                        
                         
                     </td>
 
@@ -162,4 +163,115 @@
     </form>
 
 </body>
+
+<script>
+    // var tabla = document.getElementsByTagName("table");
+    // var registros = document.getElementsByTagName("tr");
+    // var inputs = document.getElementsByTagName("input");
+
+    // var radio = document.getElementById("radioHambSencilla");
+    // var radio2 = document.getElementById("radioHambEspecial");
+
+    //var classHamburguesa = document.getElementsByClassName("tipoHamburguesa"); Necesita una clase
+
+
+
+    //1.-Crear el elemento nuevo para mi HTML
+    var nuevo = document.createElement("input");
+
+    //2.-Crear el contenido de mi elemento 
+    var contenido = document.createTextNode("Hnburguesa Doble Suprema");
+
+    //3.-Agergar el contenido al nuevo elemento
+    nuevo.appendChild(contenido);
+
+    //4.-Agregar la nueva opción del elemento a mi HTML
+    var opciones = document.getElementsByClassName("opcionesDeHamburguesas");
+    opciones[0].appendChild(nuevo);
+
+    nuevo.setAttribute("type", "radio");
+    nuevo.setAttribute("name", "tipoHamburguesa");
+    nuevo.setAttribute("id", "radiotipoHamburguesa");
+    nuevo.setAttribute("value", "hambSencilla");
+
+    // var lineJump = document.getElementsByClassName("opcionesDeHamburguesas");
+    // var input = document.getElementsByTagName("input");
+    // var newElem = document.createElement("br");
+    // lineJump[0].appendChild(newElem);
+
+    labelNuevo = document.createElement("label");
+    contenidolabel = document.createTextNode("Hamburguesa Doble Suprema 120.00MXN");
+    labelNuevo.appendChild(contenidolabel);
+    opciones[0].appendChild(labelNuevo);
+
+    //Segundo elemento
+    var nuevo2 = document.createElement("input");
+    var contenido2 = document.createTextNode("Hamburguesa de Pollo");
+    nuevo2.appendChild(contenido2);
+    opciones[0].appendChild(nuevo2);
+
+    nuevo2.setAttribute("type", "radio");
+    nuevo2.setAttribute("name", "tipoHamburguesa");
+    nuevo2.setAttribute("id", "radiotipoHamburguesa");
+    nuevo2.setAttribute("value", "hambSencilla");
+
+    labelNuevo2 = document.createElement("label");
+    contenidolabel2 = document.createTextNode("Hamburguesa de Pollo 115.00 MXN");
+    labelNuevo2.appendChild(contenidolabel2);
+    opciones[0].appendChild(labelNuevo2);
+
+
+    //Tercer elemento-------
+    var nuevo3 = document.createElement("input");
+    var contenido3 = document.createTextNode("Hamburguesa vegetariana");
+    nuevo3.appendChild(contenido3);
+    opciones[0].appendChild(nuevo3);
+
+    nuevo3.setAttribute("type", "radio");
+    nuevo3.setAttribute("name", "tipoHamburguesa");
+    nuevo3.setAttribute("id", "radiotipoHamburguesa");
+    nuevo3.setAttribute("value", "hambSencilla");
+
+    labelNuevo3 = document.createElement("label");
+    contenidolabel3 = document.createTextNode("Hamburguesa vegetariana 125.00 MXN");
+    labelNuevo3.appendChild(contenidolabel3);
+    opciones[0].appendChild(labelNuevo3);
+
+
+    //Cuarto elemento
+    var nuevo4 = document.createElement("input");
+    var contenido4 = document.createTextNode("Hamburguesa de Pavo");
+    nuevo4.appendChild(contenido4);
+    opciones[0].appendChild(nuevo4);
+
+    nuevo4.setAttribute("type", "radio");
+    nuevo4.setAttribute("name", "tipoHamburguesa");
+    nuevo4.setAttribute("id", "radiotipoHamburguesa");
+    nuevo4.setAttribute("value", "hambSencilla");
+
+    labelNuevo4 = document.createElement("label");
+    contenidolabel4 = document.createTextNode("Hamburguesa de Pavo 105.00 MXN");
+    labelNuevo4.appendChild(contenidolabel4);
+    opciones[0].appendChild(labelNuevo4);
+
+
+    //Quinto elemento
+    var nuevo5 = document.createElement("input");
+    var contenido5 = document.createTextNode("Hamburguesa BBQ");
+    nuevo5.appendChild(contenido5);
+    opciones[0].appendChild(nuevo5);
+
+    nuevo5.setAttribute("type", "radio");
+    nuevo5.setAttribute("name", "tipoHamburguesa");
+    nuevo5.setAttribute("id", "radiotipoHamburguesa");
+    nuevo5.setAttribute("value", "hambSencilla");
+
+    labelNuevo5 = document.createElement("label");
+    contenidolabel5 = document.createTextNode("Hamburguesa BBQ 130.00 MXN");
+    labelNuevo5.appendChild(contenidolabel5);
+    opciones[0].appendChild(labelNuevo5);
+
+
+
+</script>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JavaScript</title>
+
+    <style>
+
+
+
+    </style>
+
+</head>
+<body>
+    
+</body>
+
+    <script>
+        // alert("Mensaje final");
+        // alert("Me gusta mi materia de algebra");
+
+        // var matricula= 45514;
+        // var nombre= "Guillermo";
+
+        // alert(matricula);
+        // alert("Mi nombre es:" + nombre + "Mi matricula es:" + matricula);
+
+        // //Variables de tipo numérico
+        // var edad = 23;
+        // var precio = 150.15;
+
+        //Operaciones matemáticas
+        // var suma = 5 + 3;
+        // var multiplica = 8 * 4;
+
+        // console.info(edad);
+        // console.info(precio);
+        // console.info(suma);
+        // console.info(multiplica);
+
+        // var apellido = "Aguiar Guerra"
+        // var estadoCivil = "soltero"
+
+        // console.warn(suma);
+        // console.log(nombre+apellido+estadoCivil);
+
+
+        //Arreglos (Arrays)
+        var friends = ["Joan","Elena","Pamela","Brandon"];
+        var edades = [19,21,20,21];
+
+        friends[0] = "Memo";
+        console.log(friends);
+        document.writeln(friends);
+        console.log(friends[2]);
+        document.write(friends[2]);
+
+
+        //Para saber la longitud de mi arreglo
+        friends.length;
+        console.log(friends.length);
+
+
+        //Agregar nuevos elementos a mi arreglo
+        friends.push("Luis");
+        friends.push("Eloisa");
+
+        //Quita el ultimo elemento
+        friends.pop();
+
+        console.log(friends.length);
+        document.write(friends.length);
+
+
+        
+
+
+        //Juntar dos arreglos (concatenar)
+        var familia = ["Betty", "Jesed"];
+        var todos = familia.concat(friends);
+        console.log(todos);
+        document.write(todos);
+
+        var friendsOrdenados = friends.sort();
+        document.write(friendsOrdenados);
+
+
+        //Condicionales
+        if(edades[0]>edades[1])
+        {
+            document.write("La edad en la posición 0 es mayor que el de la posición 1");
+        }
+        else{
+            document.write("La edad en la posición 1 es mayor que el de la posición 0");
+        }
+
+
+
+
+        // var respuesta = true;
+        // var opcion = false;
+
+
+    </script>
+
+    <script src="js/index.js"></script>
+
+</html>
