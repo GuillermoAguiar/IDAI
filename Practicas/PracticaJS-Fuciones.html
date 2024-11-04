@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    
+    <form action="" id="operacion">
+
+        <label for="numero1">Escribe el primer numero</label>
+        <input type="number" name="primernumero" id="numero1">
+        <br>
+        <label for="numero2">Escribe el segundo numero</label>
+        <input type="number" name="segundonumero" id="numero2">
+        <br>
+        <button type="submit" id="boton">Sumar</button>
+
+        <button type="submit" id="botonResta">Restar</button>
+
+    </form>
+
+
+
+    <script>
+        function suma(n1, n2){
+            var resultado;
+
+            resultado = n1 + n2;
+
+            return resultado;
+        }
+
+        //Primera forma de obtener información
+        // function operacion(){
+            
+        //     var inputs = document.getElementsByTagName("input");
+        //     var num1Usuario = parseFloat(inputs[0].value);
+        //     var num2Usuario = parseFloat(inputs[1].value);
+
+        //     var mostrar = suma(num1Usuario, num2Usuario);
+        //     alert(mostrar);
+        // }
+
+        // var boton = document.getElementById("boton");
+
+        // boton.addEventListener("click", operacion);
+        // document.write(suma(num1Usuario, num2Usuario));
+
+
+        //Segunda forma de obtener información
+        function ejecutar(){
+            var captura = document.getElementById("operacion");
+            var mostrar = suma(
+                parseFloat(captura.numero1.value),
+                parseFloat(captura.numero2.value)
+            );
+            alert(mostrar);
+        }
+        var operacion = document.getElementById("operacion");
+        operacion.addEventListener("submit", ejecutar);
+
+
+        //Resta
+        function resta(n1R, n2R){
+            var resultadoResta;
+
+            resultadoResta = n1R - n2R;
+
+            return resultadoResta;
+
+        }
+
+        function ejecutar2(){
+            var captura2 = document.getElementById("operacion");
+            var mostrar2 = resta(
+                parseFloat(captura2.numero1.value),
+                parseFloat(captura2.numero2.value)
+            );
+            alert(mostrar2);
+        }
+        var operacion2 = document.getElementById("operacion");
+        operacion2.addEventListener("submit", ejecutar2);
+        
+
+    </script>
+
+</body>
+
+
+</html>

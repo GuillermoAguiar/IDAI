@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <form action="RegistroUsuarios.html">
+    <form id="formulario" action="">
 
         <table style="width: 25%; height: 75%;" align="center">
 
@@ -180,7 +180,7 @@
     var nuevo = document.createElement("input");
 
     //2.-Crear el contenido de mi elemento 
-    var contenido = document.createTextNode("Hnburguesa Doble Suprema");
+    var contenido = document.createTextNode("Hamburguesa Doble Suprema");
 
     //3.-Agergar el contenido al nuevo elemento
     nuevo.appendChild(contenido);
@@ -194,15 +194,15 @@
     nuevo.setAttribute("id", "radiotipoHamburguesa");
     nuevo.setAttribute("value", "hambSencilla");
 
-    // var lineJump = document.getElementsByClassName("opcionesDeHamburguesas");
-    // var input = document.getElementsByTagName("input");
-    // var newElem = document.createElement("br");
-    // lineJump[0].appendChild(newElem);
-
     labelNuevo = document.createElement("label");
     contenidolabel = document.createTextNode("Hamburguesa Doble Suprema 120.00MXN");
     labelNuevo.appendChild(contenidolabel);
     opciones[0].appendChild(labelNuevo);
+
+    // var lineJump = document.getElementsByClassName("opcionesDeHamburguesas");
+    // var label = document.getElementsByTagName("label");
+    // var newElem = document.createElement("br");
+    // lineJump[0].appendChild(newElem);
 
     //Segundo elemento
     var nuevo2 = document.createElement("input");
@@ -272,6 +272,51 @@
     opciones[0].appendChild(labelNuevo5);
 
 
+    var formulario = document.getElementById("formulario");
+
+    //Palabra reservada es: fuction 
+    //seguido del nombre de la fucion entre parentesis.
+    //los parametros, que en este caso es la variable "e", puede ser opcional.
+
+    function calcular(e){
+
+        var total = 0.0;
+
+        if (formulario.tipoHamburguesa.value == "hambSencilla") {
+            total = 35.00;
+        }
+        else if (formulario.tipoHamburguesa.value == "hambEspecial") {
+            total = 45.00;
+        }
+        else if (formulario.tipoHamburguesa.value == "hambDoble") {
+            total = 60.00;
+        }
+        else if (formulario.tipoHamburguesa.value == "hambSuprema"){
+            total = 90.00;
+        }
+
+
+        //Tipo de carne
+        if (formulario.tipodeCarne.value == "TradEspecial") {
+            total = total + 20.00;
+        }
+        else if (formulario.tipodeCarne.value == "Angus") {
+            total = total + 21.00;
+        }
+        else if (formulario.tipodeCarne.value == "Pollo") {
+            total = total + 20.50;
+        }
+        else if (formulario.tipodeCarne.value == "radioRoastBeef"){
+            total = total + 21.50;
+        }
+        alert("Total a pagar es: " + total);
+
+    }
+    formulario.addEventListener("submit", calcular);
+
+
+    //Se agrega la función realizada al formulario con la instrucción addEventListener
+    // formulario.addEventListener("submit", calcular);
 
 </script>
 </html>
