@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Arma tu PC--</title>
+
+    <style>
+
+        body{
+            background-image: url(/IDAI/Imagenes/CompuBackground.png);
+            background-repeat: no-repeat;    
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #TodoCompu{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        #SelectComponentes{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+        marquee{
+            color: white;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        b{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        label{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <br>
+    <center>
+        <hr color="white" size="5" width="85%">
+        <table width="85%">
+            <tr>
+                <td width="60%">
+                    <center>
+                        <img src="/IDAI/Imagenes/banner.jpg" alt="" width="90%"><br>
+                        <b id="TodoCompu">TODO PARA TU COMPUTADORA</b><br>
+                        <hr color="blue">
+                        <b id="SelectComponentes">Selecciona los componentes de tu preferencia y arma la computadora a tu gusto.</b><br>
+                        <marquee bgcolor="darkblue">Gabinetes, Mother Boards, Procesadores, Memorias, Monitores, Discos Duros, Perifericos y Accesorios.</marquee><br>
+                    </center>
+                </td>
+                <td width="40%">
+                    <center>
+                        <img src="/IDAI/Imagenes/compu.gif" alt="" width="80%"><br>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <hr color="white" size="5" width="85%">
+
+
+<center>
+    <form action="" name="TiendaCompu">
+        <table width="90%" bgcolor="darkblue">
+            <tr>
+                <td width="30%">
+                    <hr>
+                    <center>
+                        <b>GABINETE</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <input type="radio" name="gab" id="Minitorre" value="miniT" onclick="calPr();">
+                    <label for="Minitorre">Minitorre $618.00</label><br>
+                    <input type="radio" name="gab" id="Torre" value="torre" onclick="calPr();">
+                    <label for="Torre">Torre $1,700.00</label><br>
+                    <input type="radio" name="gab" id="Desktop" value="desktop" onclick="calPr();">
+                    <label for="Desktop">Desktop $588.00</label><br>
+                    <input type="radio" name="gab" id="Gamer" value="gamer" onclick="calPr();">
+                    <label for="Gamer">Gamer $1,700.00</label><br>
+                    <hr>
+                    <center>
+                        <b>PROCESADOR</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <input type="radio" name="pro" id="Celeron" onclick="calPr();">
+                    <label for="Celeron">Celeron $900.00</label><br>
+                    <input type="radio" name="pro" id="i3" onclick="calPr();">
+                    <label for="i3">i3 $1,900.00</label><br>
+                    <input type="radio" name="pro" id="i5" onclick="calPr();">
+                    <label for="i5">i5 $2,600.00</label><br>
+                    <input type="radio" name="pro" id="i7" onclick="calPr();">
+                    <label for="i7">i7 $6,700.00</label><br>
+                    <hr>
+                    <center>
+                        <b>MOTHERBOARD</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <center>
+                        <select name="MB" id="MBselect" onclick="calPr();">
+                            <option value="900">Estandar $900.00</option>
+                            <option value="1700">Profesional $1,700.00</option>
+                            <option value="3400">Enterprice $3,400.00</option>
+                            <option value="4500">Gamer $4,500.00</option>
+                        </select>
+                    </center>
+                    <br>
+                </td>
+                <td width="30%">
+                    <hr>
+                    <center>
+                        <b>DISCO DURO</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <input type="radio" name="disc" id="500GB" onclick="calPr();">
+                    <label for="500GB">500GB  $520.00</label><br>
+                    <input type="radio" name="disc" id="750GB" onclick="calPr();">
+                    <label for="750GB">750GB  $650.00</label><br>
+                    <input type="radio" name="disc" id="1TB" onclick="calPr();">
+                    <label for="1TB">1TB  $880.00</label><br>
+                    <input type="radio" name="disc" id="250GBssd" onclick="calPr();">
+                    <label for="250GBssd">250GB SSD  $330.00</label><br>
+                    <input type="radio" name="disc" id="500GBssd" onclick="calPr();">
+                    <label for="500GBssd">500GB SSD $770.00</label><br>
+                    <hr>
+                    <center>
+                        <b>MEMORIA RAM</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <input type="radio" name="RAM" id="4GB" onclick="calPr();">
+                    <label for="4GB">4GB $390.00</label><br>
+                    <input type="radio" name="RAM" id="8GB" onclick="calPr();">
+                    <label for="8GB">8GB $500.00</label><br>
+                    <input type="radio" name="RAM" id="16GB" onclick="calPr();">
+                    <label for="16GB">16GB $800.00</label><br>
+                    <hr>
+                    <center>
+                        <b>MONITOR</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <center>
+                        <select name="moni" id="Monitores" onclick="calPr();">
+                            <option value="1000">Tamaño 15" $1000.00</option>
+                            <option value="1400">Tamaño 21" $1,400.00</option>
+                            <option value="1650">Tamaño 24" $1,650.00</option>
+                            <option value="2700">Tamaño 27" $2,700.00</option>
+                        </select>
+                    </center>
+                    <br><br><br><br>
+                </td>
+                <td width="30%">
+                    <hr>
+                    <center>
+                        <b>PERIFERICOS Y ACCESORIOS</b>
+                    </center>
+                    <hr>
+                    <hr>
+                    <input type="checkbox" name="acc1" id="TyM" onclick="calPr();">
+                    <label for="TyM">Teclado y Mouse inalambricos $291.00</label><br>
+
+                    <input type="checkbox" name="acc2" id="Bocinas" onclick="calPr();">
+                    <label for="Bocinas">Bocinas SoundRound $2,240.00</label><br>
+
+                    <input type="checkbox" name="acc3" id="Camara" onclick="calPr();">
+                    <label for="Camara">Camara Web $1,070.00</label><br>
+
+                    <input type="checkbox" name="acc4" id="Diadema" onclick="calPr();">
+                    <label for="Diadema">Diadema $900.00</label><br>
+
+                    <input type="checkbox" name="acc5" id="Scanner" onclick="calPr();">
+                    <label for="Scanner">Scanner $1,820.00</label><br>
+
+                    <input type="checkbox" name="acc6" id="ImpreLaser" onclick="calPr();">
+                    <label for="ImpreLaser">Impresora Laser B/N $2,500.00</label><br>
+
+                    <input type="checkbox" name="acc7" id="ImpreInyec" onclick="calPr();">
+                    <label for="ImpreInyec">Impresora de Inyección a color $2,700.00</label><br>
+
+                    <input type="checkbox" name="acc8" id="Joystick" onclick="calPr();">
+                    <label for="Joystick">Joystick $960.00</label><br>
+
+                    <input type="checkbox" name="acc9" id="USB" onclick="calPr();">
+                    <label for="USB">Memoria USB 8GB $70.00</label><br>
+
+                    <input type="checkbox" name="acc10" id="Regulador" onclick="calPr();">
+                    <label for="Regulador">Regulador $800.00</label><br>
+
+                    <input type="checkbox" name="acc11" id="SO" onclick="calPr();">
+                    <label for="SO">Sistema Operativo Windows Home $2,400.00</label><br>
+
+                    <input type="checkbox" name="acc12" id="Office" onclick="calPr();">
+                    <label for="Office">Office 365 Personal $1,300.00</label><br>
+
+                    <input type="checkbox" name="acc13" id="Antivirus" onclick="calPr();">
+                    <label for="Antivirus">Vacuna Antivirus (Mc Affe) $400.00</label><br>
+                    <hr>
+                    <center>
+                        <br>
+                        <label for="cambio">Tipo de cambio (Dolar &lt; --&gt; Pesos):</label>
+                        <input type="text" name="marca" id="cambio" value="18" size="9"><br>
+                        <hr>
+                        <b>Total:</b>
+                        <input type="text" name="toy1" id="" size="5"><b>Pesos</b> <input type="text" name="tot2" id="" size="5"><b>Dolares</b>
+                        <br>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+    <br>
+
+    <hr size="5" color="darkblue">
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <center>
+                        <b>Página Desarrollada por: Guillermo Aguiar Guerra</b><br>
+                        <b>Derechos Reservados</b><br>
+                        <b>Contacto: </b><a href="mailto:guillermoaguiar91@gmail.com">guillermoaguiar91@gmail.com</a>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+
+    <script>
+
+        var f = document.getElementsByName("TiendaCompu");
+
+        function calPr(){
+            var gab = document.getElementsByName("gab");
+            alert("Estoy seleccionando" + gab);
+
+            if (f.gab.value == "miniT"){
+                alert("Estoy seleccionando" + f.gab.value);
+            }
+            else if (f.gab.value == "torre"){
+                alert("Estoy seleccionando" + f.gab.value);
+            }
+        }
+    </script>
+    
+</body>
+</html>
