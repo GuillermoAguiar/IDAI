@@ -77,7 +77,7 @@
 
 
 <center>
-    <form action="" name="TiendaCompu">
+    <form action="" name="TiendaCompu" id="idTienda">
         <table width="90%" bgcolor="darkblue">
             <tr>
                 <td width="30%">
@@ -94,20 +94,20 @@
                     <input type="radio" name="gab" id="Desktop" value="desktop" onclick="calPr();">
                     <label for="Desktop">Desktop $588.00</label><br>
                     <input type="radio" name="gab" id="Gamer" value="gamer" onclick="calPr();">
-                    <label for="Gamer">Gamer $1,700.00</label><br>
+                    <label for="Gamer">Gamer $2,800.00</label><br>
                     <hr>
                     <center>
                         <b>PROCESADOR</b>
                     </center>
                     <hr>
                     <hr>
-                    <input type="radio" name="pro" id="Celeron" onclick="calPr();">
+                    <input type="radio" name="pro" id="Celeron" value="celeron" onclick="calPr();">
                     <label for="Celeron">Celeron $900.00</label><br>
-                    <input type="radio" name="pro" id="i3" onclick="calPr();">
+                    <input type="radio" name="pro" id="i3" value="Proi3" onclick="calPr();">
                     <label for="i3">i3 $1,900.00</label><br>
-                    <input type="radio" name="pro" id="i5" onclick="calPr();">
+                    <input type="radio" name="pro" id="i5" value="Proi5" onclick="calPr();">
                     <label for="i5">i5 $2,600.00</label><br>
-                    <input type="radio" name="pro" id="i7" onclick="calPr();">
+                    <input type="radio" name="pro" id="i7" value="Proi7" onclick="calPr();">
                     <label for="i7">i7 $6,700.00</label><br>
                     <hr>
                     <center>
@@ -116,7 +116,7 @@
                     <hr>
                     <hr>
                     <center>
-                        <select name="MB" id="MBselect" onclick="calPr();">
+                        <select name="motherboard" id="MBselect" onclick="calPr();">
                             <option value="900">Estandar $900.00</option>
                             <option value="1700">Profesional $1,700.00</option>
                             <option value="3400">Enterprice $3,400.00</option>
@@ -132,15 +132,15 @@
                     </center>
                     <hr>
                     <hr>
-                    <input type="radio" name="disc" id="500GB" onclick="calPr();">
+                    <input type="radio" name="disc" id="500GB" value="500gb" onclick="calPr();">
                     <label for="500GB">500GB  $520.00</label><br>
-                    <input type="radio" name="disc" id="750GB" onclick="calPr();">
+                    <input type="radio" name="disc" id="750GB" value="750gb" onclick="calPr();">
                     <label for="750GB">750GB  $650.00</label><br>
-                    <input type="radio" name="disc" id="1TB" onclick="calPr();">
+                    <input type="radio" name="disc" id="1TB" value="1tb" onclick="calPr();">
                     <label for="1TB">1TB  $880.00</label><br>
-                    <input type="radio" name="disc" id="250GBssd" onclick="calPr();">
+                    <input type="radio" name="disc" id="250GBssd" value="250gbSSD" onclick="calPr();">
                     <label for="250GBssd">250GB SSD  $330.00</label><br>
-                    <input type="radio" name="disc" id="500GBssd" onclick="calPr();">
+                    <input type="radio" name="disc" id="500GBssd" value="500gbSSD" onclick="calPr();">
                     <label for="500GBssd">500GB SSD $770.00</label><br>
                     <hr>
                     <center>
@@ -148,11 +148,11 @@
                     </center>
                     <hr>
                     <hr>
-                    <input type="radio" name="RAM" id="4GB" onclick="calPr();">
+                    <input type="radio" name="ram" id="4GB" value="4gb" onclick="calPr();">
                     <label for="4GB">4GB $390.00</label><br>
-                    <input type="radio" name="RAM" id="8GB" onclick="calPr();">
+                    <input type="radio" name="ram" id="8GB" value="8gb" onclick="calPr();">
                     <label for="8GB">8GB $500.00</label><br>
-                    <input type="radio" name="RAM" id="16GB" onclick="calPr();">
+                    <input type="radio" name="ram" id="16GB" value="16gb" onclick="calPr();">
                     <label for="16GB">16GB $800.00</label><br>
                     <hr>
                     <center>
@@ -162,7 +162,7 @@
                     <hr>
                     <center>
                         <select name="moni" id="Monitores" onclick="calPr();">
-                            <option value="1000">Tamaño 15" $1000.00</option>
+                            <option value="1000">Tamaño 15" $1,000.00</option>
                             <option value="1400">Tamaño 21" $1,400.00</option>
                             <option value="1650">Tamaño 24" $1,650.00</option>
                             <option value="2700">Tamaño 27" $2,700.00</option>
@@ -177,44 +177,44 @@
                     </center>
                     <hr>
                     <hr>
-                    <input type="checkbox" name="acc1" id="TyM" onclick="calPr();">
+                    <input type="checkbox" name="acc1" id="acc1" value="291" onclick="calPr();">
                     <label for="TyM">Teclado y Mouse inalambricos $291.00</label><br>
 
-                    <input type="checkbox" name="acc2" id="Bocinas" onclick="calPr();">
+                    <input type="checkbox" name="acc2" id="acc2" value="2240" onclick="calPr();">
                     <label for="Bocinas">Bocinas SoundRound $2,240.00</label><br>
 
-                    <input type="checkbox" name="acc3" id="Camara" onclick="calPr();">
+                    <input type="checkbox" name="acc3" id="acc3" value="1070" onclick="calPr();">
                     <label for="Camara">Camara Web $1,070.00</label><br>
 
-                    <input type="checkbox" name="acc4" id="Diadema" onclick="calPr();">
+                    <input type="checkbox" name="acc4" id="acc4" value="900" onclick="calPr();">
                     <label for="Diadema">Diadema $900.00</label><br>
 
-                    <input type="checkbox" name="acc5" id="Scanner" onclick="calPr();">
+                    <input type="checkbox" name="acc5" id="acc5" value="1820" onclick="calPr();">
                     <label for="Scanner">Scanner $1,820.00</label><br>
 
-                    <input type="checkbox" name="acc6" id="ImpreLaser" onclick="calPr();">
+                    <input type="checkbox" name="acc6" id="acc6" value="2500" onclick="calPr();">
                     <label for="ImpreLaser">Impresora Laser B/N $2,500.00</label><br>
 
-                    <input type="checkbox" name="acc7" id="ImpreInyec" onclick="calPr();">
+                    <input type="checkbox" name="acc7" id="acc7" value="2700" onclick="calPr();">
                     <label for="ImpreInyec">Impresora de Inyección a color $2,700.00</label><br>
 
-                    <input type="checkbox" name="acc8" id="Joystick" onclick="calPr();">
+                    <input type="checkbox" name="acc8" id="acc8" value="960" onclick="calPr();">
                     <label for="Joystick">Joystick $960.00</label><br>
 
-                    <input type="checkbox" name="acc9" id="USB" onclick="calPr();">
+                    <input type="checkbox" name="acc9" id="acc9" value="70" onclick="calPr();">
                     <label for="USB">Memoria USB 8GB $70.00</label><br>
 
-                    <input type="checkbox" name="acc10" id="Regulador" onclick="calPr();">
+                    <input type="checkbox" name="acc10" id="acc10" value="800" onclick="calPr();">
                     <label for="Regulador">Regulador $800.00</label><br>
 
-                    <input type="checkbox" name="acc11" id="SO" onclick="calPr();">
+                    <input type="checkbox" name="acc11" id="acc11" value="2400" onclick="calPr();">
                     <label for="SO">Sistema Operativo Windows Home $2,400.00</label><br>
 
-                    <input type="checkbox" name="acc12" id="Office" onclick="calPr();">
+                    <input type="checkbox" name="acc12" id="acc12" value="1300" onclick="calPr();">
                     <label for="Office">Office 365 Personal $1,300.00</label><br>
 
-                    <input type="checkbox" name="acc13" id="Antivirus" onclick="calPr();">
-                    <label for="Antivirus">Vacuna Antivirus (Mc Affe) $400.00</label><br>
+                    <input type="checkbox" name="acc13" id="acc13" value="400" onclick="calPr();">
+                    <label for="Antivirus">Vacuna Antivirus (Mc Affe) $400.00</label><br>   
                     <hr>
                     <center>
                         <br>
@@ -222,7 +222,8 @@
                         <input type="text" name="marca" id="cambio" value="18" size="9"><br>
                         <hr>
                         <b>Total:</b>
-                        <input type="text" name="toy1" id="" size="5"><b>Pesos</b> <input type="text" name="tot2" id="" size="5"><b>Dolares</b>
+                        <input type="text" name="tot1" id="" size="5"><b>MXN</b> 
+                        <input type="text" name="tot2" id="dolar" size="5"><b>USD</b>
                         <br>
                     </center>
                 </td>
@@ -250,18 +251,142 @@
 
     <script>
 
-        var f = document.getElementsByName("TiendaCompu");
+        // Esta sentencia te da los arreglos 
+        // var f = document.getElementsByName("TiendaCompu");
+
+        var formulario = document.getElementById("idTienda");
 
         function calPr(){
-            var gab = document.getElementsByName("gab");
-            alert("Estoy seleccionando" + gab);
+            
+            formulario.tot1.value = "";
+            var totalPesos = 0;
 
-            if (f.gab.value == "miniT"){
-                alert("Estoy seleccionando" + f.gab.value);
+            if (formulario.gab.value == "miniT"){
+                // f[0].tot1.value = "618.00";
+                totalPesos = totalPesos + 618.00;
             }
-            else if (f.gab.value == "torre"){
-                alert("Estoy seleccionando" + f.gab.value);
+            else if (formulario.gab.value == "torre"){
+                // f[0].tot1.value = "1,700.00";
+                totalPesos = totalPesos + 1700.00;
             }
+            else if (formulario.gab.value == "desktop"){
+                // Esto son formas de colocar
+                // formulario.tot1.value = "588.00";
+                // totalPesos = totalPesos + 580.00;
+                totalPesos += 580.00;
+            }
+            else if (formulario.gab.value == "gamer"){
+                // formulario.tot1.value = "2,800.00";
+                totalPesos += 2800.00;
+            }
+
+            //Procesador
+            if (formulario.pro.value == "celeron"){
+                // formulario.tot1.value = "900.00";
+                totalPesos += 900.00;
+            }
+            else if (formulario.pro.value == "Proi3"){
+                // formulario.tot1.value = "1,900.00";
+                totalPesos += 1900.00
+            }
+            else if (formulario.pro.value == "Proi5"){
+                // formulario.tot1.value = "2,600.00";
+                totalPesos += 2600.00;
+            }
+            else if (formulario.pro.value == "Proi7"){
+                // formulario.tot1.value = "6,700.00";
+                totalPesos += 6700.00;
+            }
+
+            //Motherboard
+            totalPesos += parseFloat(formulario.motherboard.value);
+            
+            //Disco Duro
+            if (formulario.disc.value == "500gb"){
+                // formulario.tot1.value = "520.00";
+                totalPesos += 520.00;
+            }
+            else if (formulario.disc.value == "750gb"){
+                // formulario.tot1.value = "650.00";
+                totalPesos += 650.00;
+            }
+            else if (formulario.disc.value == "1tb"){
+                // formulario.tot1.value = "880.00";
+                totalPesos += 880.00;
+            }
+            else if (formulario.disc.value == "250gbSSD"){
+                // formulario.tot1.value = "330.00";
+                totalPesos += 330.00;
+            }
+            else if (formulario.disc.value == "500gbSSD"){
+                // formulario.tot1.value = "770.00";
+                totalPesos += 770.00;
+            }
+
+            //RAM
+            if (formulario.ram.value == "4gb"){
+                // formulario.tot1.value = "390.00";
+                totalPesos += 390.00;
+            }
+            else if (formulario.ram.value == "8gb"){
+                // formulario.tot1.value = "500.00";
+                totalPesos += 500.00;
+            }
+            else if (formulario.ram.value == "16gb"){
+                // formulario.tot1.value = "800.00";
+                totalPesos += 800.00;
+            }
+
+            //Monitor
+            totalPesos += parseFloat(formulario.moni.value);
+
+            //PERIFERICOS Y ACCESORIOS
+            //En checkbox no es necesario colocar "else if", solo con los "if"
+            if (formulario.acc1.checked){
+                totalPesos += parseFloat(formulario.acc1.value);
+            }
+            if (formulario.acc2.checked){
+                totalPesos += parseFloat(formulario.acc2.value);
+            }
+            if (formulario.acc3.checked){
+                totalPesos += parseFloat(formulario.acc3.value);
+            }
+            if (formulario.acc4.checked){
+                totalPesos += parseFloat(formulario.acc4.value);
+            }
+            if (formulario.acc5.checked){
+                totalPesos += parseFloat(formulario.acc5.value);
+            }
+            if (formulario.acc6.checked){
+                totalPesos += parseFloat(formulario.acc6.value);
+            }
+            if (formulario.acc7.checked){
+                totalPesos += parseFloat(formulario.acc7.value);
+            }
+            if (formulario.acc8.checked){
+                totalPesos += parseFloat(formulario.acc8.value);
+            }
+            if (formulario.acc9.checked){
+                totalPesos += parseFloat(formulario.acc9.value);
+            }
+            if (formulario.acc10.checked){
+                totalPesos += parseFloat(formulario.acc10.value);
+            }
+            if (formulario.acc11.checked){
+                totalPesos += parseFloat(formulario.acc11.value);
+            }
+            if (formulario.acc12.checked){
+                totalPesos += parseFloat(formulario.acc12.value);
+            }
+            if (formulario.acc13.checked){
+                totalPesos += parseFloat(formulario.acc13.value);
+            }
+
+            formulario.tot1.value = totalPesos;
+
+            formulario.tot2.value = totalPesos / parseFloat(formulario.cambio.value);
+
+
         }
     </script>
     
