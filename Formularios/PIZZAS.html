@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAS</title>
+
+    <style>
+
+        b{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        #cantidad{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        marquee{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        label{
+            color: white;
+
+        }
+    </style>
+
+
+
+</head>
+<body bgcolor="#F98903">
+
+    <br><br><br>
+    <hr color="red" size="3" width="90%">
+    <center>
+        <form name="pizzeria" id="idpizzeria">
+
+            <table width="90%">
+
+                <tr>
+                    <td width="30%">
+                        <label for="Cantpiz">CANTIDAD:</label>
+                        <input type="text" name="Cantpiz" id="Cantpiz" onchange="PPP();" value="1">
+                        <hr>
+                        <b>TAMAÑO:</b>
+                        <br>
+                        <input type="radio" name="cantTa" id="Personal" value="per" onchange="PPP();">
+                        <label for="Personal">Personal 45.00</label><br>
+                        <input type="radio" name="cantTa" id="Chica" value="chi" onchange="PPP();">
+                        <label for="Chica">Chica 90.00</label><br>
+                        <input type="radio" name="cantTa" id="Mediana" value="medi" onchange="PPP();">
+                        <label for="Mediana">Mediana 150.00</label><br>
+                        <input type="radio" name="cantTa" id="Familiar" value="fami" onchange="PPP();">
+                        <label for="Familiar">Familiar 250.00</label><br>
+                        <input type="radio" name="cantTa" id="Suprema" value="sup" onchange="PPP();">
+                        <label for="Suprema">Suprema 400.00</label><br>
+                        <hr>
+                        <b>TIPO DE PAN:</b>
+                        <br>
+                        <input type="radio" name="tippan" id="Normal" value="normal" onchange="PPP();">
+                        <label for="Normal">Normal +0.00</label><br>
+                        <input type="radio" name="tippan" id="Delgada" value="delgada" onchange="PPP();">
+                        <label for="Delgada">Delgada +15.00</label><br>
+                        <input type="radio" name="tippan" id="PanPizaa" value="panpizza" onchange="PPP();">
+                        <label for="PanPizaa">Pan Pizza +20.00</label><br>
+                        <input type="radio" name="tippan" id="HotCheese" value="hotcheese" onchange="PPP();">
+                        <label for="HotCheese">Hot Cheese +30.00</label><br>
+                    </td>
+                    <td width="30%">
+                        <b>INGREDIENTES (5.00 c/u):</b>
+                        <br>
+                        <input type="checkbox" name="ingre1" id="Jamon" value="5" onchange="PPP();">
+                        <label for="Jamon">Jamon</label><br>
+                        <input type="checkbox" name="ingre2" id="Peperoni" value="5" onchange="PPP();">
+                        <label for="Peperoni">Peperoni</label><br>
+                        <input type="checkbox" name="ingre3" id="Tocino" value="5" onchange="PPP();">
+                        <label for="Tocino">Tocino</label><br>
+                        <input type="checkbox" name="ingre4" id="Champiñones" value="5" onchange="PPP();">
+                        <label for="Champiñones">Champiñones</label><br>
+                        <input type="checkbox" name="ingre5" id="Chorizo" value="5" onchange="PPP();">
+                        <label for="Chorizo">Chorizo Español</label><br>
+                        <input type="checkbox" name="ingre6" id="Piña" value="5" onchange="PPP();">
+                        <label for="Piña">Piña</label><br>
+                        <input type="checkbox" name="ingre7" id="Salami" value="5" onchange="PPP();">
+                        <label for="Salami">Salami</label><br>
+                        <input type="checkbox" name="ingre8" id="Aceitunas" value="5" onchange="PPP();">
+                        <label for="Aceitunas">Aceitunas</label><br>
+                        <hr>
+                        <b>ESPECIALES:</b>
+                        <br>
+                        <select name="pizzaselect" id="pizzaselect" onchange="PPP();">
+                            <option value="0">Margarita +0.00</option>
+                            <option value="15">4 Quesos +15.00</option>
+                            <option value="10">Hawaiana +10.00</option>
+                            <option value="15">Napolitana +15.00</option>
+                            <option value="25">New York +25.00</option>
+                            <option value="30">Mexicana +30.00</option>
+                        </select>
+                        <hr>
+                        <hr>
+                        <b>¿Quieres buffet?</b>
+                        <select name="buff" id="buff" onchange="PPP();">
+                            <option value="SI">Si</option>
+                            <option value="NO">No</option>
+                        </select>
+                        <br>
+                        <label for="NoAdul">Numero de adultos:</label>
+                        <input type="text" name="NoAdul" id="NoAdul" size="2" onchange="PPP();" value="0">
+                        <br>
+                        <label for="NoNiños">Numero de niños:</label>
+                        <input type="text" name="NoNiños" id="NoNiños" size="2" onchange="PPP();" value="0">
+                    </td>
+                    <td width="30%">
+                        <center>
+                            <img src="../Imagenes-pizza/PizzaLogo2.png" alt="" width="40%">
+                        </center>
+                        <hr color="black">
+                        <marquee bgcolor="black">Pizzas Italianas originales y fiel a su origen</marquee>
+                        <hr color="black">
+                        <br><br><br>
+                        <b>TOTAL A PAGAR:</b>
+                        <input type="text" name="totpiz" id="totpiz" size="8" readonly>
+                        <br><br>
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </form>
+    </center>
+    <hr color="red" size="3" width="90%">
+
+
+    <script>
+
+        var formulario = document.getElementById("idpizzeria");
+
+        function PPP(){
+
+            // var A = parseInt(pizzeria.Cantpiz.value) || 0;
+            var totpiz = 0;
+
+            //Tamaño
+            if(formulario.cantTa.value == "per"){
+                totpiz = totpiz + 45.00;
+            }
+            else if(formulario.cantTa.value == "chi"){
+                totpiz = totpiz + 90.00;
+            }
+            else if(formulario.cantTa.value == "medi"){
+                totpiz = totpiz + 150.00;
+            }
+            else if(formulario.cantTa.value == "fami"){
+                totpiz = totpiz + 250.00;
+            }
+            else if(formulario.cantTa.value == "sup"){
+                totpiz = totpiz + 400.00;
+            }
+
+            //Tipo de pan
+            if(formulario.tippan.value == "normal"){
+                totpiz = totpiz + 0.00;
+            }
+            else if(formulario.tippan.value == "delgada"){
+                totpiz = totpiz + 15.00;
+            }
+            else if(formulario.tippan.value == "panpizza"){
+                totpiz = totpiz + 20.00;
+            }
+            else if(formulario.tippan.value == "hotcheese"){
+                totpiz = totpiz + 30.00;
+            }
+
+            //Ingredientes
+            if(formulario.ingre1.checked){
+                totpiz += parseFloat(formulario.ingre1.value);
+            }
+            if(formulario.ingre2.checked){
+                totpiz += parseFloat(formulario.ingre2.value);
+            }
+            if(formulario.ingre3.checked){
+                totpiz += parseFloat(formulario.ingre3.value);
+            }
+            if(formulario.ingre4.checked){
+                totpiz += parseFloat(formulario.ingre4.value);
+            }
+            if(formulario.ingre5.checked){
+                totpiz += parseFloat(formulario.ingre5.value);
+            }
+            if(formulario.ingre6.checked){
+                totpiz += parseFloat(formulario.ingre6.value);
+            }
+            if(formulario.ingre7.checked){
+                totpiz += parseFloat(formulario.ingre7.value);
+            }
+            if(formulario.ingre8.checked){
+                totpiz += parseFloat(formulario.ingre8.value);
+            }
+
+            //Especiales
+            totpiz += parseFloat(formulario.pizzaselect.value);
+
+            //Buffet
+            const buffet = pizzeria.buff.value;
+            const adul = parseInt(pizzeria.NoAdul.value) || 0;;
+            const niñ = parseInt(pizzeria.NoNiños.value) || 0;;
+
+            let TTT = 0;
+            if(buffet == "SI"){
+                TTT = (adul * 120) + (niñ * 60);
+            }
+            else{
+                TTT = totpiz * A;
+            }
+
+            
+            formulario.totpiz.value = totpiz;
+        }
+
+    </script>
+
+    
+</body>
+</html>
