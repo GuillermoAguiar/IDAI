@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Telefonico</title>
+
+    <style>
+        body {
+            background-color: #e7c010f3
+        }
+
+        h1 {
+            font: "broadway";
+        }
+
+        label {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <form action=""></form> -->
+    <form id="calculoMinutos" action="ReciboTelefonico(JS).html" method="GET">
+        <h1>RECIBO TELEFONICO</h1>
+        <label for="" >Minutos de celular (10.00 MXN c/u)</label>
+        <br>
+        <input type="number" id="minCel" value="1">
+
+        <hr>
+        <label for="">TIPO DE PLAN</label>
+        <br>
+        <input type="radio" name="plan" value="solotel" onclick="calcular();">Solo teléfono<br>
+        <input type="radio" name="plan" value="telint" onclick="calcular();">Teléfono + Internet<br>
+        <input type="radio" name="plan" value="telinttv" onclick="calcular();">Teléfono + Internet + TV<br>
+        <input type="radio" name="plan" value="telint2tv" onclick="calcular();">Teléfono + Internet (100 Mbps) + 2 TV<br>
+
+        <hr>
+        <label for="">OTROS SERVICIOS</label>
+        <br>
+        <input type="checkbox" name="antivi" value="50" onclick="calcular();">Antivirus<br>
+        <input type="checkbox" name="servNube" value="70" onclick="calcular();">Serivicio de Nube<br>
+        <input type="checkbox" name="webserv" value="90" onclick="calcular();">Web Services<br>
+        <input type="checkbox" name="firewall" value="110" onclick="calcular();">Firewall<br>
+
+        <hr>
+        <label for="">PAQUETES</label>
+        <br>
+        <select name="paquetes" onclick="calcular();">
+            <option value="100">Residencial</option>
+            <option value="150">PYMES</option>
+            <option value="200">Empresas</option>
+            <option value="50">Universidades</option>
+        </select>
+
+        <hr>
+        <div class="result">
+			<input type="text" id="resultado"></p>
+		</div>	
+
+        <button type="submit" onclick="calcular();">Calcular</button>
+
+    </form>
+
+
+    <script>
+
+        // var nuevo = document.createElement("input");
+        // var contenido = document.createTextNode("Teléfono + Internet (100 Mbps) + 2 TV");
+        // nuevo.appendChild(contenido);
+        // var opciones = document.getElementsByName("plan");
+        // opciones[0].appendChild(nuevo);
+
+        // nuevo.setAttribute("type", "radio");
+        // nuevo.setAttribute("name", "plan");
+        
+
+
+
+        var formulario = document.getElementById("calculoMinutos");
+
+
+
+		function calcular() {
+
+            var minCel = parseInt(formulario.minCel.value);            
+            var total = 0;
+            total = minCel * 10;
+
+            if(formulario.plan.value == "solotel"){
+                total = total + 500.00;
+            }
+            else if(formulario.plan.value == "telint"){
+                total = total + 650.00;
+            }
+            else if(formulario.plan.value == "telinttv"){
+                total = total + 800.00;
+            }
+            else if(formulario.plan.value == "telint2tv"){
+                total = total + 950.00;
+            }
+
+            if(formulario.antivi.checked){
+                total += parseFloat(formulario.antivi.value);
+            }
+            if(formulario.servNube.checked){
+                total += parseFloat(formulario.servNube.value);
+            }
+            if(formulario.webserv.checked){
+                total += parseFloat(formulario.webserv.value);
+            }
+            if(formulario.firewall.checked){
+                total += parseFloat(formulario.firewall.value);
+            }
+
+            total += parseFloat(formulario.paquetes.value);
+			
+
+			formulario.resultado.value = total;
+
+		}
+
+        formulario.addEventListener("submit", calcular);
+
+    </script>
+</body>
+
+</html>
