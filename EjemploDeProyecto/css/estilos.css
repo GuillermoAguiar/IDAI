@@ -323,3 +323,67 @@ body{
     }
 
 }
+
+/* Sección de Servicios */
+#servicios{
+    height: 100vh;
+    background: white;
+    padding: 40px;
+}
+
+.servicios-titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicios-contenedor{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    grid-template-areas: "ingredientes  imagen  rapidez "
+                         "calidad       imagen  entrega";   
+}
+
+.calidad{
+    grid-row: calidad;
+    grid-column: calidad;
+}
+
+.ingredientes{
+    grid-row: ingredientes;
+    grid-column: ingredientes;
+}
+
+.rapidez{
+    grid-row: rapidez;
+    grid-column: rapidez;
+}
+
+.entrega{
+    grid-row: entrega;
+    grid-column: entrega;
+}
+
+.imagen-central{
+    grid-row: imagen;
+    grid-column: imagen;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items span{
+    width: 90px;
+    font-size: 40px;
+    color: var(--color-secundario);
+    padding: 20px;
+    
+}
