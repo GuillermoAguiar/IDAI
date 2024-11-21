@@ -8,6 +8,7 @@
     --text-default: 'Open Sans';
 }
 
+
 /*Seccion general*/
 *{
     margin: 0;
@@ -60,6 +61,7 @@ body{
 .btn:hover{
     padding: 15px 45px;
 }
+
 
 /*Menu principal*/
 .menu-principal{
@@ -142,6 +144,7 @@ body{
     color: var(--color-secundario);
 }
 
+
 /*Query medias*/
 @media screen and (max-width:650px){
     .menu-principal{
@@ -210,6 +213,7 @@ body{
         font-size: 3vw;
     }
 }
+
 
 /*Slider de productos*/
 #menu-productos .contenedor-principal{
@@ -302,6 +306,7 @@ body{
     transform: scale(1.15);
 }
 
+
 /*Media Querys slider*/
 @media screen and (max-width: 850px){
     /*Slider Productos*/
@@ -322,7 +327,20 @@ body{
         padding: 10px 30px;
     }
 
+    /* Sección Servicios */
+    .servicios-contenedor{
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ingredientes      rapidez"
+                             "calidad           entrega";
+    }
+
+    .imagen-central{
+        display: none;
+    }
+
 }
+
 
 /* Sección de Servicios */
 #servicios{
@@ -371,6 +389,11 @@ body{
 .imagen-central{
     grid-row: imagen;
     grid-column: imagen;
+    transition: all 0.5s;
+}
+
+.imagen-central:hover{
+    transform: scale(1.1);
 }
 
 .items{
@@ -385,5 +408,175 @@ body{
     font-size: 40px;
     color: var(--color-secundario);
     padding: 20px;
-    
+    border: 5px double #dedede;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s;
 }
+
+.items span:hover{
+    background: var(--color-secundario);
+    color: #fff;
+}
+
+.ingredientes span,
+.calidad span{
+    color: var(--color-primario);
+}
+
+.ingredientes span:hover,
+.calidad span:hover{
+    background: var(--color-primario);
+    color: #fff;
+}
+
+.items .titulo-item{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.items .texto-item{
+    font-size: 14px;
+    color: var(--color-texto);
+    text-align: center;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+
+
+
+/* Sección equipo */
+#equipo{
+    height: 100vh;
+    display: flex;
+}
+
+.persona{
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.persona-imagen{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+}
+
+.persona:hover{
+    flex-grow: 3;
+}
+
+.persona:hover .persona-imagen{
+    filter: grayscale(0%);
+}
+
+.persona-info{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.persona:hover .persona-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: 0.3s;
+}
+
+.persona-info h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.5);
+}
+
+.persona-info p{
+    color: var(--color-secundario);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    text-shadow: 2px 2px 3px rgb(255, 0, 0, 0.5);
+}
+
+.persona-info a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: var(--color-secundario);
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.social-media a:hover{
+    color: var(--color-secundario);
+    /* background: ; */
+}
+
+
+/* Sección de Ingredientes */
+#ingredientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingre{
+    flex-grow: 1;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-ingre{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-ingre{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.info-ingre p{
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.info-ingre:hover{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.info-ingre p:hover{
+    transform: translateY(10px);
+}
+
+
