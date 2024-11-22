@@ -34,3 +34,33 @@ btnDerecho.addEventListener("click", function(){
 btnIzquierdo.addEventListener("click", function(){
     contenedor.scrollLeft -= contenedor.offsetWidth;
 });
+
+
+//SECCION CONTACTO
+var formulario = document.getElementById("formulario");
+
+function validar(e){
+    var inputNombre = document.getElementById("nombre");
+    var inputEmail = document.getElementById("email");
+    var inputComments = document.getElementById("comentarios");
+
+    // Esta es para la condición ó ||
+    if(inputNombre.value == 0 
+        || inputEmail.value == 0 
+        || inputComments.value == 0){
+        
+        //Nueva sentencia, previene que se mueva a la posición original
+        e.preventDefault();
+        alert("Te faltan todos los campos");
+    }
+    else{
+        e.preventDefault();
+        alert("Datos enviados");
+
+        inputNombre.value = "";
+        inputEmail.value = "";
+        inputComments.value = "";
+    }
+}
+
+formulario.addEventListener("submit", validar);
