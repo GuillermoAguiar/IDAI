@@ -1,0 +1,224 @@
+:root {
+    --color-primario: #2b3a42;    /* Verde azulado profundo */
+    --color-secundario: #b8c1ec;    /* Gris azulado claro */
+    --color-terciario: #d4d8db;     /* Gris suave para fondos y detalles */
+    --color-fondo: #f8f9fb;         /* Blanco suave para el fondo principal */
+    --color-texto: #333;             /* Texto oscuro para buena legibilidad */
+    --fuente-principal: 'Helvetica', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.main-header #btnMenuClosed,
+.main-header #btnMenuOpen {
+    cursor: pointer;
+    color: var(--color-secundario);
+    font-size: 30px;
+    float: right;
+    transition: all 0.5s;
+
+    display: none; 
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-img img {
+    height: 50px;
+    width: 50px;
+}
+
+header .logo h1 {
+    margin-left: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-bar ul li a:hover {
+    color: var(--color-terciario);
+}
+
+#hero .negocio-video {
+    width: 100%;
+    /* padding: 60px 20px; */
+    /* background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%); */
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--color-primario);
+    margin-bottom: 25px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-terciario);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.services-grid img {
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.title-map {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--color-primario);
+    margin-bottom: 25px;
+}
+
+footer.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--color-primario);
+    color: white;
+    margin-top: 30px;
+}
+
+footer.footer p {
+    margin: 5px 0;
+}
+
+
+#equipo{
+    height: 100vh;
+    display: flex;
+}
+
+.persona{
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.persona-imagen{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+}
+
+.persona:hover{
+    flex-grow: 3;
+}
+
+.persona:hover .persona-imagen{
+    filter: grayscale(0%);
+}
+
+.persona-info{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.persona:hover .persona-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: 0.3s;
+}
+
+.persona-info h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.5);
+}
+
+.persona-info p{
+    color: var(--color-secundario);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    text-shadow: 2px 2px 3px rgb(255, 0, 0, 0.5);
+}
+
+.persona-info a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: var(--color-secundario);
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.social-media a:hover{
+    color: var(--color-secundario);
+    /* background: ; */
+}
+
+.mapa-facioli{
+    display: flex;
+}
+
+.mapa .mapa-facioli{
+    justify-content: center;
+}
