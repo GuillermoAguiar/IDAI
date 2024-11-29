@@ -1,4 +1,4 @@
-:root {
+:root{
     --color-primario: #2b3a42;    /* Verde azulado profundo */
     --color-secundario: #b8c1ec;    /* Gris azulado claro */
     --color-terciario: #d4d8db;     /* Gris suave para fondos y detalles */
@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     margin: 0;
     font-family: var(--fuente-principal);
     background-color: var(--color-fondo);
@@ -21,7 +21,7 @@ body {
     line-height: 1.6;
 }
 
-.main-header {
+.main-header{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -33,34 +33,34 @@ body {
     z-index: 1;
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.logo img {
+.logo img{
     height: 50px;
     width: 50px;
 }
 
-.logo h1 {
+.logo h1{
     margin-left: 10px;
     font-size: 30px;
 }
 
-.menu-bar {
+.menu-bar{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.menu-bar .nav-bar ul li {
+.menu-bar .nav-bar ul li{
     display: inline-block;
     padding: 0 10px;
 }
 
-.menu-bar .nav-bar ul li a {
+.menu-bar .nav-bar ul li a{
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -75,26 +75,26 @@ body {
     transition: all 0.5s;
 }
 
-.menu-bar .nav-bar ul li a:hover {
+.menu-bar .nav-bar ul li a:hover{
     color: var(--color-terciario);
     background-size: 80% 2px;
 }
 
-.main-header i {
+.main-header i{
     cursor: pointer;
     color: var(--color-secundario);
     font-size: 30px;
     float: right;
     transition: all 0.5s;
 
-    display: none; 
+    display: none;
 }
 
-.main-header i:hover {
+.main-header i:hover{
     color: var(--color-terciario);
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width:650px){
     .main-header{
         position: fixed;
         top: 0;

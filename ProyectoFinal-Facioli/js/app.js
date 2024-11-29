@@ -1,6 +1,6 @@
 var btnMenuOpen = document.getElementById("btnMenuOpen"),
     btnMenuClosed = document.getElementById("btnMenuClosed"),
-    menuResponsive = document.getElementById("manuBar");
+    menuResponsive = document.getElementById("menuBar");
 
 
 btnMenuOpen.addEventListener("click", function(){
