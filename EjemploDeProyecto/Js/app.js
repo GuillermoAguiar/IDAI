@@ -81,3 +81,48 @@ function validar(e){
 }
 
 formulario.addEventListener("submit", validar);
+
+
+
+//Boton scroll top
+var btnTop = document.getElementById("btn-top"),
+    logo = document.getElementById("logo");
+
+
+//Detectamos scroll en nuestra pagina web
+window.addEventListener("scroll", function(){
+
+    var scroll = document.documentElement.scrollTop,
+        fullSize = document.documentElement.offsetHeight,
+        sizeVP = document.documentElement.clientHeight;
+
+    if (scroll > 100){
+        btnTop.classList.add("show");
+    }
+    else{
+        btnTop.classList.remove("show");
+    }
+
+
+    //Modificar elemento cuando llegue a final de pagina
+    if (fullSize == scroll + sizeVP) {
+        btnTop.classList.add("srollFinal");
+    }
+    else{
+        btnTop.classList.remove("srollFinal");
+    }
+});
+
+
+//Detectamos evento click en el boton 
+btnTop.addEventListener("click", function(){
+    window.scrollTo("0,0");
+});
+
+
+//Evento click en el logo
+logo.addEventListener("click", function(){
+    window.scrollTo("0,0");
+});
+
+
