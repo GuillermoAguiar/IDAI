@@ -1,3 +1,4 @@
+
 var btnMenuOpen = document.getElementById("btnMenuOpen"),
     btnMenuClosed = document.getElementById("btnMenuClosed"),
     menuResponsive = document.getElementById("menuBar");
@@ -43,6 +44,9 @@ function validar(e){
     var inputNombre = document.getElementById("nombre");
     var inputEmail = document.getElementById("email");
     var inputComments = document.getElementById("comentarios");
+    var alertSuccess = document.getElementById("alertSuccess");
+    var alertError = document.getElementById("alertError");
+
 
     // Esta es para la condición ó ||
     if(inputNombre.value == 0 
@@ -51,11 +55,24 @@ function validar(e){
         
         //Nueva sentencia, previene que se mueva a la posición original
         e.preventDefault();
-        alert("Te faltan todos los campos");
+        alertError.classList.remove("hide");
+        alertError.classList.add("show");
+
+        setTimeout(function(){
+            alertError.classList.remove("show");
+        alertError.classList.add("hide");
+        }, 2000);
+
     }
     else{
         e.preventDefault();
-        alert("Datos enviados");
+        alertSuccess.classList.remove("hide");
+        alertSuccess.classList.add("show");
+
+        setTimeout(function(){
+        alertSuccess.classList.remove("show");
+        alertSuccess.classList.add("hide");
+        }, 2000);
 
         inputNombre.value = "";
         inputEmail.value = "";
