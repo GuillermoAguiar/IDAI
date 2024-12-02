@@ -116,13 +116,13 @@ window.addEventListener("scroll", function(){
 
 //Detectamos evento click en el boton 
 btnTop.addEventListener("click", function(){
-    window.scrollTo("0,0");
+    window.scrollTo(0,0);
 });
 
 
 //Evento click en el logo
 logo.addEventListener("click", function(){
-    window.scrollTo("0,0");
+    window.scrollTo(0,0);
 });
 
 
