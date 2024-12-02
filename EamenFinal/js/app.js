@@ -21,9 +21,9 @@
 // });
 
 document.getElementById('enviar').addEventListener('click', function() {
-    let puntos = 0;
+    var puntos = 0;
 
-    // Verificar las respuestas
+
     if (document.querySelector('input[name="q1"]:checked') && document.querySelector('input[name="q1"]:checked').value === 'a') {
         puntos++;
     }
@@ -36,13 +36,14 @@ document.getElementById('enviar').addEventListener('click', function() {
         puntos++;
     }
 
-    // Mostrar el resultado
-    let resultadoText = Tu puntaje es: ${puntos}/3;
+
+    resultadoText = puntaje: ${puntos}/3;
 
     if (puntos === 3) {
-        resultadoText += "<br>¡Excelente trabajo!";
+        resultadoText += "¡Excelente trabajo!";
     } else if (puntos === 0) {
-        resultadoText += "<br>Sigue practicando";
+        resultadoText += "Sigue practicando";
     }
+    
     document.getElementById('resultado').innerHTML = resultadoText;
 });
